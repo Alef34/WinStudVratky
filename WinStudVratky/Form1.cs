@@ -76,6 +76,7 @@ namespace WinStudVratky
     private void Form1_Load(object sender, EventArgs e)
     {
       dtpDatSplat.Value = DateTime.Now.AddDays(1);
+
       txtMsgId.Text = Constants.msginfo + DateTime.Today.ToString("yyMMdd") + "-001";
     }
 
