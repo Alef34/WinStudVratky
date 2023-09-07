@@ -47,7 +47,8 @@ namespace Students
                 IBAN = reader.GetValue(3).ToString(),
                 SWIFT = reader.GetValue(4).ToString(),
                 BIC = reader.GetValue(5).ToString(),
-                Amount = decimal.Parse(reader.GetValue(6).ToString())
+                Amount = decimal.Parse(reader.GetValue(6).ToString()),
+                VS= reader.GetValue(7).ToString()
               });
 
               Console.WriteLine($"Row {rowNr} parsed succesfully");

@@ -58,16 +58,30 @@ namespace WinStudVratky
 
         dueDate = dtpDatSplat.Value;
 
-        var outputDataGenerator = new DataProcessor(new XslDataReader(), new XmlDataWriter("urn:iso:std:iso:20022:tech:xsd:pain.001.001.03"), new InputDataProcessor());
+        string IBAN_UKF;
+        if (rbIBAN1.Checked)
+          IBAN_UKF = rbIBAN1.Tag.ToString();
+        else if (rbIBAN2.Checked)
+          IBAN_UKF = rbIBAN2.Tag.ToString();
+        else if (rbIBAN3.Checked)
+          IBAN_UKF = rbIBAN3.Tag.ToString();
+        else
+          IBAN_UKF = "";
+
+
+
+        var outputDataGenerator = new DataProcessor(new XslDataReader(), 
+            new XmlDataWriter("urn:iso:std:iso:20022:tech:xsd:pain.001.001.03"), 
+            new InputDataProcessor());
         var menoACestaSuboru = Constants.CestaNaUlozenieSNazvom;
         var KdeSuUdaje = Constants.CestaSUdajmi;
-        outputDataGenerator.Execute(id, firstPaymentId, dueDate, 
+        outputDataGenerator.Execute(id, firstPaymentId, dueDate, IBAN_UKF,
           KdeSuUdaje, menoACestaSuboru);
         MessageBox.Show("Hotovo!!!");
 
 
       }
-      catch (Exception ex)
+        catch (Exception ex)
       {
         Console.WriteLine(ex.Message);
       }

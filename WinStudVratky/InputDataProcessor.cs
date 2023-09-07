@@ -8,12 +8,12 @@ namespace Students
 {
   public interface IInputDataProcessor
   {
-    OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate, InputData inputData);
+    OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate,string IBAN_UKF, InputData inputData);
   }
 
   public class FakeInputDataProcessor : IInputDataProcessor
   {
-    public OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate, InputData inputData)
+    public OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate, string IBAN_UKF, InputData inputData)
     {
       return new OutputData
       {
@@ -49,7 +49,7 @@ namespace Students
 
   public class InputDataProcessor : IInputDataProcessor
   {
-    public OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate, InputData inputData)
+    public OutputData GetOutputData(string id, int firstPaymentId, DateTime dueDate,string IBAN_UKF, InputData inputData)
     {
       if (inputData == null || inputData.People == null || inputData.People.Count() == 0)
         return null;
@@ -68,7 +68,7 @@ namespace Students
       foreach (var person in inputData.People.Where(p => p != null))
       {
         var paymentInformations = outputData.CstmrCdtTrfInitn.PaymentInformations;
-        ParsePaymentData(firstPaymentId++, paymentInformations, dueDate, person);
+        ParsePaymentData(firstPaymentId++, paymentInformations, dueDate, IBAN_UKF, person);
       }
 
       return outputData;
@@ -80,7 +80,7 @@ namespace Students
       {
         MsgId = id,
         //CreDtTm = dateTime.ToString(),
-        CreDtTm = DateTime.Now.ToString("yyyy-MM-ddThh:mm.ss"),
+        CreDtTm = DateTime.Now.ToString("yyyy-MM-ddThh:mm:ss"),
         NbOfTxs = peopleData.Count(),
         CtrlSum = peopleData.Sum(p => p.Amount),
         InitgPty = new InitgPty
@@ -100,7 +100,7 @@ namespace Students
       };
     }
 
-    private void ParsePaymentData(int firstPaymentNr, List<PaymentInformation> paymentInformations, DateTime dueDate, Person person)
+    private void ParsePaymentData(int firstPaymentNr, List<PaymentInformation> paymentInformations, DateTime dueDate,string IBAN_UKF, Person person)
     {
       paymentInformations.Add(new PaymentInformation
       {
@@ -122,7 +122,7 @@ namespace Students
         {
           Id = new DbtrAcctId
           {
-            IBAN = Constants.UniversityIBAN
+            IBAN = IBAN_UKF
           }
         },
         DbtrAgt = new DbtrAgt
@@ -143,7 +143,7 @@ namespace Students
       {
         PmtId = new PmtId
         {
-          EndToEndId = Constants.VariableSymbol
+          EndToEndId = "/VS"+person.VS.Trim()+"/SS/KS"//Constants.VariableSymbol
         },
         Amt = new Amt
         {

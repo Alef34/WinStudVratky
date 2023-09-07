@@ -18,5 +18,6 @@ namespace Students.Data
     public string SWIFT { get; set; }
     public string BIC { get; set; }
     public decimal Amount { get; set; }
+    public string VS { get; set; }
   }
 }

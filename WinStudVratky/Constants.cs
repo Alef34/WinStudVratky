@@ -13,7 +13,7 @@ namespace Students
     public const string Discount = @"SLEV";
     public const string UniversityID = @"2882";
     public const string StateBank = @"SPSR";
-    public const string UniversityIBAN = @"SK2081800000007000487199";
+    //public const string UniversityIBAN = @"SK2081800000007000487199";
     public const string UniversityBIC = @"SPSRSKBA";
     public const string VariableSymbol = @"VS2020";
     public const string Currency = @"EUR";
