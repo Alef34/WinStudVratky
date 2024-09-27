@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Students
 {
@@ -43,7 +44,7 @@ namespace Students
               {
                 Nr = int.Parse(nr.ToString()),
                 Name = name.ToString(),
-                ID = int.Parse(reader.GetValue(2).ToString()),
+                ID = reader.GetValue(2).ToString(),
                 IBAN = reader.GetValue(3).ToString(),
                 SWIFT = reader.GetValue(4).ToString(),
                 BIC = reader.GetValue(5).ToString(),
@@ -56,7 +57,8 @@ namespace Students
             catch (Exception ex)
             {
               Console.WriteLine($"Invalid data on row {rowNr}, skipping...");
-            }
+                            MessageBox.Show($"Invalid data on row {rowNr}, skipping...");
+                        }
             rowNr++;
           }
           inputData.People = people;

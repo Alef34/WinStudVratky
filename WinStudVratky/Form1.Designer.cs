@@ -103,9 +103,9 @@
             this.groupBox1.Controls.Add(this.txtMsgId);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.Location = new System.Drawing.Point(9, 148);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(683, 51);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -116,7 +116,7 @@
             this.txtMsgId.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMsgId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtMsgId.Location = new System.Drawing.Point(2, 21);
-            this.txtMsgId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMsgId.Margin = new System.Windows.Forms.Padding(2);
             this.txtMsgId.Name = "txtMsgId";
             this.txtMsgId.Size = new System.Drawing.Size(679, 26);
             this.txtMsgId.TabIndex = 0;
@@ -127,9 +127,9 @@
             this.groupBox2.Controls.Add(this.txtIdPrvej);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox2.Location = new System.Drawing.Point(11, 215);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(679, 51);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -140,7 +140,7 @@
             this.txtIdPrvej.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtIdPrvej.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtIdPrvej.Location = new System.Drawing.Point(2, 21);
-            this.txtIdPrvej.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdPrvej.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdPrvej.Name = "txtIdPrvej";
             this.txtIdPrvej.Size = new System.Drawing.Size(675, 26);
             this.txtIdPrvej.TabIndex = 0;
@@ -150,7 +150,7 @@
             // 
             this.dtpDatSplat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtpDatSplat.Location = new System.Drawing.Point(2, 21);
-            this.dtpDatSplat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpDatSplat.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDatSplat.Name = "dtpDatSplat";
             this.dtpDatSplat.Size = new System.Drawing.Size(266, 26);
             this.dtpDatSplat.TabIndex = 3;
@@ -160,9 +160,9 @@
             this.groupBox3.Controls.Add(this.dtpDatSplat);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox3.Location = new System.Drawing.Point(11, 271);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(270, 68);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
@@ -177,9 +177,9 @@
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox4.Location = new System.Drawing.Point(14, 422);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(676, 63);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
@@ -200,7 +200,7 @@
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Right;
             this.button3.Location = new System.Drawing.Point(618, 21);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(56, 40);
             this.button3.TabIndex = 2;
@@ -212,7 +212,7 @@
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Left;
             this.button1.Location = new System.Drawing.Point(2, 21);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 40);
             this.button1.TabIndex = 0;
@@ -228,9 +228,9 @@
             this.groupBox5.Controls.Add(this.button2);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox5.Location = new System.Drawing.Point(9, 63);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox5.Size = new System.Drawing.Size(686, 63);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
@@ -251,7 +251,7 @@
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Left;
             this.button2.Location = new System.Drawing.Point(2, 21);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 40);
             this.button2.TabIndex = 0;
@@ -266,9 +266,9 @@
             this.groupBox6.Controls.Add(this.rbIBAN1);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox6.Location = new System.Drawing.Point(294, 271);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox6.Size = new System.Drawing.Size(394, 154);
             this.groupBox6.TabIndex = 7;
             this.groupBox6.TabStop = false;
@@ -278,7 +278,7 @@
             // 
             this.rbIBAN3.AutoSize = true;
             this.rbIBAN3.Location = new System.Drawing.Point(30, 103);
-            this.rbIBAN3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbIBAN3.Margin = new System.Windows.Forms.Padding(2);
             this.rbIBAN3.Name = "rbIBAN3";
             this.rbIBAN3.Size = new System.Drawing.Size(295, 24);
             this.rbIBAN3.TabIndex = 2;
@@ -290,7 +290,7 @@
             // 
             this.rbIBAN2.AutoSize = true;
             this.rbIBAN2.Location = new System.Drawing.Point(30, 69);
-            this.rbIBAN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbIBAN2.Margin = new System.Windows.Forms.Padding(2);
             this.rbIBAN2.Name = "rbIBAN2";
             this.rbIBAN2.Size = new System.Drawing.Size(295, 24);
             this.rbIBAN2.TabIndex = 1;
@@ -303,12 +303,12 @@
             this.rbIBAN1.AutoSize = true;
             this.rbIBAN1.Checked = true;
             this.rbIBAN1.Location = new System.Drawing.Point(30, 37);
-            this.rbIBAN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbIBAN1.Margin = new System.Windows.Forms.Padding(2);
             this.rbIBAN1.Name = "rbIBAN1";
             this.rbIBAN1.Size = new System.Drawing.Size(295, 24);
             this.rbIBAN1.TabIndex = 0;
             this.rbIBAN1.TabStop = true;
-            this.rbIBAN1.Tag = "SK24 8180 0000 0070 0020 1947";
+            this.rbIBAN1.Tag = "SK2481800000007000201947";
             this.rbIBAN1.Text = "SK24 8180 0000 0070 0020 1947";
             this.rbIBAN1.UseVisualStyleBackColor = true;
             // 
@@ -324,7 +324,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

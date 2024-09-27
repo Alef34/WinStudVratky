@@ -27,6 +27,7 @@ namespace WinStudVratky
 
     private void toolStripButton3_Click(object sender, EventArgs e)
     {
+            
       try
       {
         string id;
@@ -83,8 +84,8 @@ namespace WinStudVratky
       }
         catch (Exception ex)
       {
-        Console.WriteLine(ex.Message);
-      }
+                MessageBox.Show(ex.Message);
+            }
     }
 
     private void Form1_Load(object sender, EventArgs e)

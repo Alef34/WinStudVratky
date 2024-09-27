@@ -13,7 +13,7 @@ namespace Students.Data
   {
     public int Nr { get; set; }
     public string Name { get; set; }
-    public int ID { get; set; }
+    public string  ID { get; set; }
     public string IBAN { get; set; }
     public string SWIFT { get; set; }
     public string BIC { get; set; }
